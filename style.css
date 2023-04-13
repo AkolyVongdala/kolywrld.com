@@ -1,63 +1,45 @@
+/* Import Indie Flower font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Set the font family for the body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Indie Flower', cursive;
 }
 
+/* Style the header */
 header {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 1em;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5em;
-    transition: all 0.2s ease;
-}
-
-nav a:hover {
-    background-color: #333;
-    color: #fff;
-}
-
+/* Style the main content area */
 main {
-    margin: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-section {
-    margin-bottom: 3em;
+/* Style the image gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+.gallery img {
+  width: 30%;
+  margin-bottom: 20px;
 }
 
-img {
-    max-width: 100%;
-}
-
+/* Style the footer */
 footer {
-    background-color: #eee;
-    padding: 1em;
-    text-align: center;
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
 }
