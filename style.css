@@ -1,22 +1,54 @@
 /* Import Indie Flower font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-/* Set the font family for the body */
-body {
-  font-family: 'Indie Flower', cursive;
-  margin: 0; /* Remove default margin */
-  min-height: 100vh; /* Ensure the body covers the full viewport height */
-  display: flex;
-  flex-direction: column; /* Create a flex container for header, main, and footer */
+
+/* HTML style the entire page */
+html {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Style the header */
 header {
-  background-color: #fff;
   padding: 20px;
   text-align: left;
-  font-size: 36px;
+  font-size: 20px;
   font-weight: bold;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 50,
+      "EHLT" 12;
+  }
+}
+
+#welcome {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Set the font family for the body */
+body {
+  background-color: #fffafa;
+  margin: 0;
+  /* Remove default margin */
+  min-height: 100vh;
+  /* Ensure the body covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  /* Create a flex container for header, main, and footer */
 }
 
 /* Style the main content area */
@@ -24,7 +56,8 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  flex: 1; /* Allow main content to grow and push footer to the bottom */
+  flex: 1;
+  /* Allow main content to grow and push footer to the bottom */
 }
 
 /* Style the image gallery */
@@ -46,6 +79,12 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  font-style: italic;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto;
+  /* Push the footer to the bottom */
 }
+
+/* rainbow text effect */
+.rainbow-text {
+  background-image: linear-gradient(to left, rgb(247, 208, 247), rgba(95, 0, 164, 0.428), rgba(0, 0, 255, 0.393), rgba(0, 128, 0, 0.273), yellow, rgba(255, 166, 0, 0.581), rgba(255, 0, 0, 0.784));
+}
+

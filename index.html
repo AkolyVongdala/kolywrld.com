@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kolywrld</title>
+    <title>kolywrld</title>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kode+Mono:wght@400..700&family=Nabla&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
     <header>
-        <h1>@kolywrld</h1>
+        <h1>kolywrld</h1>
     </header>
-    <main>
-        <section id="artwork">
-            <h2>Artwork</h2>
-            <!-- Add images and descriptions of your artwork here -->
+
+    <main id="main-1">
+        <section id="welcome">
+            <h1>hello, welcome to my wrld</h1>
+            <p> a small n cozy space for me to share things w the outside </p>
+            <p class="rainbow-text"> disclaimer: i made this for funsie </p>
         </section>
         <section id="photography">
-            <h2>Photography</h2>
-            <!-- Add images and descriptions of your photography here -->
+            <button onclick="toggleAccordion('myAccordion')">
+            <h3>
+                <span class="material-symbols-outlined">star</span>
+                film by kolyroll
+            </h3>
+        </button>
+        <!-- content inside the myAccordion -->
+        <div id="myAccordion" class="w3-hide">
+            <!-- Content inside the accordion -->
+            <p>This is the hidden content that will appear when the button is clicked.</p>
+        </div>
         </section>
         <section id="writing">
-            <h2>Writing</h2>
-            <!-- Add text or links to your writing here -->
+            <h3>
+                <span class="material-symbols-outlined">star</span>
+                to think deeply
+            </h3>
+        </section>
+        <section id="about">
+            <h3>
+                <span class="material-symbols-outlined">star</span>
+                just me
+            </h3>
         </section>
     </main>
     <footer>
-        <p>Copyright © 2023 kolywrld | 
-        <a href="https://github.com/akolyvongdala/akolyvongdala.github.io">GitHub</a></p>
+        <p>Copyright © 2000 kolywrld |
+            <a href="https://github.com/akolyvongdala/akolyvongdala.github.io">GitHub</a>
+        </p>
     </footer>
 </body>
+
 </html>
