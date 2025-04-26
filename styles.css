@@ -1,3 +1,21 @@
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --desc: #555;
+    --border: #ccc;
+    --link: #0072ff;
+    --hover: #f7f7f7;
+}
+
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: #eee;
+    --desc: #aaa;
+    --border: #333;
+    --link: #66b2ff;
+    --hover: #1e1e1e;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +25,26 @@
 body, html {
     height: 100%;
     font-family: 'Courier New', Courier, monospace;
-    background: #ffffff;
-    color: #222;
+    background: var(--bg);
+    color: var(--text);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 40px 20px;
     text-align: center;
+    position: relative;
+}
+
+.toggle-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text);
 }
 
 .logo {
@@ -34,13 +64,13 @@ body, html {
 
 .description {
     font-size: 16px;
-    color: #555;
+    color: var(--desc);
     margin-bottom: 20px;
 }
 
 .disclaimer {
     background: linear-gradient(90deg, #f78ca0, #f9748f, #fd868c, #fe9a8b);
-    color: #222;
+    color: var(--text);
     padding: 8px 16px;
     border-radius: 8px;
     font-size: 14px;
@@ -58,11 +88,11 @@ body, html {
 }
 
 .link-button {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     padding: 12px;
     border-radius: 8px;
     text-decoration: none;
-    color: #222;
+    color: var(--text);
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -73,7 +103,7 @@ body, html {
 }
 
 .link-button:hover {
-    background: #f7f7f7;
+    background: var(--hover);
 }
 
 .star {
@@ -81,7 +111,7 @@ body, html {
 }
 
 .photo-card {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -105,19 +135,23 @@ body, html {
 
 .caption {
     font-size: 14px;
-    color: #555;
+    color: var(--desc);
     font-style: italic;
-    text-align: left; /* Aligns the caption to the left */
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
     font-size: 12px;
-    color: #aaa;
+    color: var(--desc);
     margin-top: 40px;
 }
 
 footer a {
-    color: #0072ff;
+    color: var(--link);
     text-decoration: none;
     margin-left: 4px;
 }

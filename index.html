@@ -34,5 +34,22 @@
     <a href="#">GitHub</a>
 </footer>
 
+ <!-- toggle between light and dark mode--> -->
+<script>
+    function toggleTheme() {
+        const html = document.documentElement;
+        const icon = document.getElementById('themeIcon');
+        if (html.getAttribute('data-theme') === 'dark') {
+            html.removeAttribute('data-theme');
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        } else {
+            html.setAttribute('data-theme', 'dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+    }
+    </script>
+
 </body>
 </html>
