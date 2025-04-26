@@ -1,64 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kolywrld</title>
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kode+Mono:wght@400..700&family=Nabla&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            background: #ffffff;
+            color: #222;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #fbb034, #ffdd00, #c850c0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .welcome {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .disclaimer {
+            background: linear-gradient(90deg, #f78ca0, #f9748f, #fd868c, #fe9a8b);
+            color: #222;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .link-button {
+            border: 1px solid #ccc;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #222;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .link-button:hover {
+            background: #f7f7f7;
+        }
+
+        .star {
+            font-size: 18px;
+        }
+
+        .photo-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .photo-card h2 {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .photo-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+
+        footer {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #0072ff;
+            text-decoration: none;
+            margin-left: 4px;
+        }
+
+        details summary {
+            list-style: none;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>kolywrld</h1>
-    </header>
 
-    <main id="main-1">
-        <section id="welcome">
-            <h1>hello, welcome to my wrld</h1>
-            <p> a small n cozy space for me to share things w the outside </p>
-            <p class="rainbow-text"> disclaimer: i made this for funsie </p>
-        </section>
-        <section id="photography">
-            <button onclick="toggleAccordion('myAccordion')">
-            <h3>
-                <span class="material-symbols-outlined">star</span>
-                film by kolyroll
-            </h3>
-        </button>
-        <!-- content inside the myAccordion -->
-        <div id="myAccordion" class="w3-hide">
-            <!-- Content inside the accordion -->
-            <p>This is the hidden content that will appear when the button is clicked.</p>
+<div class="logo">kolywrld</div>
+<div class="welcome">hello, welcome to my wrld</div>
+<div class="description">a small n cozy space for me to share things w the outside</div>
+<div class="disclaimer">disclaimer: i made this for funsie</div>
+
+<div class="section">
+    <details>
+        <summary class="link-button"><span class="star">&#9734;</span> film by kolyroll</summary>
+        <div class="photo-card">
+            <h2><span class="star">&#128247;</span> seattle ferry, 2024</h2>
+            <img src="/mnt/data/IMG_2768.JPG" alt="Seattle Ferry Photo">
+            <div class="caption">
+                4:12 pm. strangers sharing silence across the sound,<br>
+                while seattle's silhouette whispers stories through the mist.
+            </div>
         </div>
-        </section>
-        <section id="writing">
-            <h3>
-                <span class="material-symbols-outlined">star</span>
-                to think deeply
-            </h3>
-        </section>
-        <section id="about">
-            <h3>
-                <span class="material-symbols-outlined">star</span>
-                just me
-            </h3>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright © 2000 kolywrld |
-            <a href="https://github.com/akolyvongdala/akolyvongdala.github.io">GitHub</a>
-        </p>
-    </footer>
-</body>
+    </details>
+    <a href="#" class="link-button"><span class="star">&#9734;</span> to think deeply</a>
+    <a href="#" class="link-button"><span class="star">&#9734;</span> just me</a>
+</div>
 
+<footer>
+    Copyright © 2000 kolywrld |
+    <a href="#">GitHub</a>
+</footer>
+
+</body>
 </html>
