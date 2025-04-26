@@ -88,3 +88,7 @@ footer {
   background-image: linear-gradient(to left, rgb(247, 208, 247), rgba(95, 0, 164, 0.428), rgba(0, 0, 255, 0.393), rgba(0, 128, 0, 0.273), yellow, rgba(255, 166, 0, 0.581), rgba(255, 0, 0, 0.784));
 }
 
+.caption {
+  text-align: left;
+  font-weight: bold;
+}
